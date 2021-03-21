@@ -1,0 +1,27 @@
+### Get all budgets
+GET /budgets HTTP/1.1
+Host: 127.0.0.1:3333
+
+### Get findById budgets
+GET /budgets/1 HTTP/1.1
+Host: 127.0.0.1:3333
+
+### Creat user
+POST /budgets HTTP/1.1
+Host: 127.0.0.1:3333
+content-type: application/json
+
+{ "name": "Maria Eduarda 2" }
+
+###
+PATCH /budgets/68 HTTP/1.1
+Host: 127.0.0.1:3333
+content-type: application/json
+
+{
+  "name": "Didiarisdi ajuste de nome"
+}
+
+### Delete budget
+DELETE /budgets/69 HTTP/1.1
+Host: 127.0.0.1:3333
